@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #E30B5D;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: #FFE4E1;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 0 10px;
+    border-right: 1px solid #FFE4E1;
+}
+
+nav a:last-child {
+    border-right: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+}
+
+.product-intro {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.product-image {
+    width: 300px;
+    animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.buy-now {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.features {
+    padding: 20px 0;
+    margin: 0;
+}
+
+.features h2 {
+    text-align: center;
+    color: #2E1A47;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-item {
+    background-color: #FAAFBA;
+    color: #2E1A47;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    animation: slideIn 0.8s ease-out forwards;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.feature-item:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.feature-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+footer {
+    background-color: #E30B5D;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
